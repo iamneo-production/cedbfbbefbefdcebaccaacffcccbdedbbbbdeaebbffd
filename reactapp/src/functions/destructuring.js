@@ -3,7 +3,7 @@ export function getUserIpDetails(userResponse) {
     return [userName, userIp];
   }
   
-  export function getTopThree(studentMarks) {
-    const [s1 = null, s2 = null, s3 = null, ...x] = studentMarks;
-    return [s1, s2, s3].sort();
+export function getTopThree(studentMarks) {
+    const [s1 = null, s2 = null, s3 = null, ...rest] = studentMarks;
+    return [s1, s2,s3].sort();
   }
